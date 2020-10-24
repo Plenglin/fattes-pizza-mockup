@@ -2,10 +2,14 @@ import { antipastoSalad,
     buffaloWings,
     chickenCombo,
     meatPizza,
+    garlicBread,
     deluxeHawaiian,
     fattesSpecial,
     stickyFingers,
-    veggiePizza, } from "./assets"
+    veggiePizza,
+    tossedSalad,
+    cheeseSticks,
+    calzones, } from "./assets"
 
 export const VEGETARIAN = 1
 export const VEGAN = 3
@@ -120,6 +124,7 @@ export const salads = [
     {
         name: 'Tossed Salad',
         price: 299,
+        image: tossedSalad,
         desc: 'Dressings: Ranch or Italian'
     }
 ]
@@ -157,16 +162,19 @@ export const sides = [
     {
         name: 'Garlic Bread',
         price: 349,
+        image: garlicBread,
         type: SIDE | VEGAN
     },
     {
         name: 'Cheese Sticks',
         price: 549,
+        image: cheeseSticks,
         type: SIDE | VEGETARIAN
     },
     {
         name: 'Calzones',
         price: 949,
+        image: calzones,
         type: SIDE | VEGETARIAN
     },
     {

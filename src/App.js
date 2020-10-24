@@ -1,16 +1,14 @@
 import AppBar from '@material-ui/core/AppBar';
-import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
+import Link from '@material-ui/core/Link';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import React from 'react';
 import { FaPizzaSlice } from 'react-icons/fa';
-import { useStyles } from './util';
-import Link from '@material-ui/core/Link';
 import './App.css';
 import { Menu } from './menu.js';
+import { useStyles } from './util';
 
 function App() {
   const classes = useStyles();

@@ -1,21 +1,19 @@
-import Button from '@material-ui/core/Button';
+import { Container } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import React from 'react';
+import { fattesFavorites, salads, sides, subs } from './menu-data';
 import { useStyles } from './util';
-import { fattesFavorites } from './menu-data';
-import { Container } from '@material-ui/core';
 
 function Price({data}) {
   if (Array.isArray(data)) {
     const [sm, md, lg] = data
-    return <Typography>S: ${sm / 100} | M: ${md / 100} | L: ${lg / 100}</Typography>
+    return <Typography gutterBottom>S: ${sm / 100} | M: ${md / 100} | L: ${lg / 100}</Typography>
   }
-  return <Typography>${data / 100}</Typography>
+  return <Typography gutterBottom>${data / 100}</Typography>
 }
 
 function MenuItemCard({item}) {
@@ -23,16 +21,18 @@ function MenuItemCard({item}) {
 
   return (
     <Card className={classes.card}>
-      <CardMedia
-        className={classes.cardMedia}
-        image={item.image}
-        title="Image title"
-      />
+      {item.image 
+        ? <CardMedia
+            className={classes.cardMedia}
+            image={item.image}
+          /> 
+        : null}
+      
       <CardContent className={classes.cardContent}>
-        <Typography gutterBottom variant="h5" component="h2">
+        <Typography variant="h5" component="h2">
           {item.name}
-          <Price data={item.price}/>
         </Typography>
+        <Price data={item.price}/>
         <Typography>
           {item.desc}
         </Typography>
@@ -62,11 +62,12 @@ function MenuCategory({title, items}) {
 }
 
 export function Menu() {
-  const classes = useStyles();
-
   return (
     <>
       <MenuCategory title="Fatte's Favorites" items={fattesFavorites}/>
+      <MenuCategory title="Salads" items={salads}/>
+      <MenuCategory title="Sides" items={sides}/>
+      <MenuCategory title="Subs" items={subs}/>
     </>
   );
 }
