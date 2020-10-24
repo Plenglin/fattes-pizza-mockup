@@ -1,6 +1,8 @@
 import { antipastoSalad,
     buffaloWings,
     chickenCombo,
+    meatPizza,
+    deluxeHawaiian,
     fattesSpecial,
     stickyFingers,
     veggiePizza, } from "./assets"
@@ -187,12 +189,13 @@ export const fattesFavorites = [
         name: 'Deluxe Hawaiian',
         price: [1649, 2025, 2399],
         desc: 'Ham, Pineapple, Bacon, Onions, Extra Cheese',
+        image: deluxeHawaiian,
         type: PIZZA
     },
     {
         name: 'Veggie',
         price: [1649, 2025, 2399],
-        desc: 'Mushroom, Onions, Black Olives, Artichoke HeArts, Green Peppers, Tomatoes',
+        desc: 'Mushroom, Onions, Black Olives, Artichoke Hearts, Green Peppers, Tomatoes',
         image: veggiePizza,
         type: PIZZA | VEGETARIAN
     },
@@ -207,6 +210,7 @@ export const fattesFavorites = [
         name: 'Meat Medley',
         price: [1849, 2175, 2499],
         desc: 'Pepperoni, Sausage, Ham, Linguica, Ground Beef, Bacon',
+        image: meatPizza,
         type: PIZZA
     },
     {
