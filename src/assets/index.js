@@ -1,15 +1,15 @@
-import antipastoSalad from "./antipasto-salad.jpg"
-import buffaloWings from './buffalo-wings.jpg'
-import chickenCombo from './chicken-combo.jpg'
-import fattesSpecial from './fattes-special.jpg'
-import stickyFingers from './sticky-fingers.jpg'
-import veggiePizza from './veggie-pizza.jpg'
-import meatPizza from './meat-pizza.jpg'
-import deluxeHawaiian from './deluxe-hawaiian.jpg'
-import calzones from './calzones.jpg'
-import cheeseSticks from './cheese-sticks.jpg'
-import tossedSalad from './tossed-salad.jpg'
-import garlicBread from './garlic-bread.jpg'
+const antipastoSalad = "/images/antipasto-salad.jpg"
+const buffaloWings = '/images/buffalo-wings.jpg'
+const chickenCombo = '/images/chicken-combo.jpg'
+const fattesSpecial = '/images/fattes-special.jpg'
+const stickyFingers = '/images/sticky-fingers.jpg'
+const veggiePizza = '/images/veggie-pizza.jpg'
+const meatPizza = '/images/meat-pizza.jpg'
+const deluxeHawaiian = '/images/deluxe-hawaiian.jpg'
+const calzones = '/images/calzones.jpg'
+const cheeseSticks = '/images/cheese-sticks.jpg'
+const tossedSalad = '/images/tossed-salad.jpg'
+const garlicBread = '/images/garlic-bread.jpg'
 
 export {
     antipastoSalad,
