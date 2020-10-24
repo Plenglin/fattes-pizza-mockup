@@ -1,8 +1,14 @@
-// Use values in CENTS so that float precision errors don't happen
+import { antipastoSalad,
+    buffaloWings,
+    chickenCombo,
+    fattesSpecial,
+    stickyFingers,
+    veggiePizza, } from "./assets"
 
 export const VEGETARIAN = 1
 export const VEGAN = 3
 
+// Use values in CENTS so that float precision errors don't happen
 export const buildYourOwnPrices = [
     [1149, 1475, 1799],
     [1299, 1625, 1899],
@@ -102,7 +108,21 @@ export const SALAD = 0x20
 export const PIZZA = 0x40
 export const SIDE = 0x80
 
-export const items = [
+export const salads = [
+    {
+        name: 'Antipasto Salad',
+        price: [299, 599, 999],
+        image: antipastoSalad,
+        desc: 'Lettuce, Tomatoes, Cheese, Mushrooms, Onions, Green Peppers, Black Olives, Ham, Pepperoni'
+    },
+    {
+        name: 'Tossed Salad',
+        price: 299,
+        desc: 'Dressings: Ranch or Italian'
+    }
+]
+
+export const subs = [
     {
         name: 'Monster Combo',
         desc: 'Roast Beef, Ham, Pepperoni, Italian Sausage, and Cheese',
@@ -129,6 +149,9 @@ export const items = [
         price: 799,
         type: SUB
     },
+]
+
+export const sides = [
     {
         name: 'Garlic Bread',
         price: 349,
@@ -147,12 +170,17 @@ export const items = [
     {
         name: 'Buffalo Wings',
         price: 699,
+        image: buffaloWings,
         type: SIDE
-    },
+    }
+]
+
+export const fattesFavorites = [
     {
         name: 'Sticky Fingers',
         price: [1749, 2225, 2599],
         desc: 'Pepperoni, Bacon, Mushrooms, Onions, Ham, Black Olives, Green Peppers, Italian Sausage',
+        image: stickyFingers,
         type: PIZZA
     },
     {
@@ -165,12 +193,14 @@ export const items = [
         name: 'Veggie',
         price: [1649, 2025, 2399],
         desc: 'Mushroom, Onions, Black Olives, Artichoke HeArts, Green Peppers, Tomatoes',
+        image: veggiePizza,
         type: PIZZA | VEGETARIAN
     },
     {
         name: 'Chicken Combo',
         price: [1649, 2025, 2399],
         desc: 'Chicken, Black Olives, Onions, Tomatoes, Garlic, with White Garlic Sauce or Red Sauce',
+        image: chickenCombo,
         type: PIZZA
     },
     {
@@ -183,16 +213,7 @@ export const items = [
         name: "Fatte's Special",
         price: [2049, 2425, 2799],
         desc: 'Pepperoni, Italian Sausage, Ham, Linguica, Onions, Mushroom, Garlic, Pineapple, Olives, Green Peppers',
+        image: fattesSpecial,
         type: PIZZA
     },
-    {
-        name: 'Antipasto Salad',
-        price: [299, 599, 999],
-        desc: 'Lettuce, Tomatoes, Cheese, Mushrooms, Onions, Green Peppers, Black Olives, Ham, Pepperoni'
-    },
-    {
-        name: 'Tossed Salad',
-        price: 299,
-        desc: 'Dressings: Ranch or Italian'
-    }
 ]
