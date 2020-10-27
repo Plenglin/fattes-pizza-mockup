@@ -67,7 +67,7 @@ function BuildYourOwnCategory() {
     <>
       <Container className={classes.cardGrid} maxWidth="md">
         <Grid>
-          <Typography gutterBottom variant="h4" component="h4">Build Your Own Pizza!</Typography>
+            <Typography gutterBottom variant="h4" component="h4">Build Your Own Pizza!</Typography>
         </Grid>
         <Grid>
           <Paper className={classes.paper}>
