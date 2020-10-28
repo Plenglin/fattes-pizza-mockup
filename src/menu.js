@@ -1,4 +1,4 @@
-import { Container, Paper, Table, TableContainer, TableHead, TableBody, TableCell, TableRow } from '@material-ui/core';
+import { Container, Paper, Table, TableContainer, TableHead, TableBody, TableCell, TableRow, useMediaQuery } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -6,23 +6,55 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import React from 'react';
 import { fattesFavorites, salads, sides, subs, buildYourOwnPrices, toppings, doubleExtraToppings } from './menu-data';
-import { useStyles } from './util';
+import { theme, useStyles } from './util';
 
 function Price({data}) {
   if (Array.isArray(data)) {
     const [sm, md, lg] = data
-    return <Typography gutterBottom>S: ${sm / 100} | M: ${md / 100} | L: ${lg / 100}</Typography>
+    return <Grid container gutterBottom>
+      <Grid item xs={4} sm={4}>
+        <Typography>S: {sm / 100}</Typography>
+      </Grid>
+      <Grid item xs={4} sm={4}>
+        <Typography>M: {md / 100}</Typography>
+      </Grid>
+      <Grid item xs={4} sm={4}>
+        <Typography>L: {lg / 100}</Typography>
+      </Grid>
+    </Grid>
   }
-  return <Typography gutterBottom>${data / 100}</Typography>
+  return <Grid gutterBottom><Typography>{data / 100}</Typography></Grid>
 }
 
 function MenuItemCard({item}) {
   const classes = useStyles();
+  const large = useMediaQuery(theme.breakpoints.up('sm'))
 
-  return (
-    <Card className={classes.card}>
+  if (large) {
+    return <Card className={classes.card}>
       {item.image 
         ? <CardMedia
+            className={classes.cardMedia}
+            image={item.image}
+          /> 
+        : null}
+      
+      <CardContent className={classes.cardContent}>
+        <Typography variant="h5" component="h2">
+          {item.name}
+        </Typography>
+        <Price data={item.price}/>
+        <Typography>
+          {item.desc}
+        </Typography>
+      </CardContent>
+    </Card>
+  }
+  return (
+    <Card className={classes.card} style={{maxHeight: 300, flexDirection: 'row'}}>
+      {item.image 
+        ? <CardMedia
+            style={{minWidth: 150, height: '100%'}}
             className={classes.cardMedia}
             image={item.image}
           /> 
@@ -71,7 +103,7 @@ function BuildYourOwnCategory() {
         </Grid>
         <Grid>
           <Paper className={classes.paper}>
-            <Grid container spacing={3}>
+            <Grid container spacing={2}>
               <Grid item xs={12} md={6}>
                 <TableContainer>
                   <Table className={classes.table} size="small">
