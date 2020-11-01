@@ -33,7 +33,8 @@ function App() {
 
         <main>
           <div className={classes.heroContent} style={{
-            backgroundImage: `linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url(${headerPizza})`
+            backgroundImage: `linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url(${headerPizza})`,
+            backgroundSize: "cover"
           }}>
             <Container maxWidth="sm">
               <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
