@@ -6,6 +6,7 @@ import stickyFingers from './sticky-fingers.jpg'
 import veggiePizza from './veggie-pizza.jpg'
 import meatPizza from './meat-pizza.jpg'
 import deluxeHawaiian from './deluxe-hawaiian.jpg'
+import headerPizza from './header-pizza.jpg'
 import calzones from './calzones.jpg'
 import cheeseSticks from './cheese-sticks.jpg'
 import tossedSalad from './tossed-salad.jpg'
@@ -14,6 +15,7 @@ import garlicBread from './garlic-bread.jpg'
 export {
     antipastoSalad,
     buffaloWings,
+    headerPizza,
     chickenCombo,
     fattesSpecial,
     stickyFingers,

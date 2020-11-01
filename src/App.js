@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import React from 'react';
 import { FaPhoneAlt, FaPizzaSlice } from 'react-icons/fa';
 import './App.css';
+import { headerPizza } from './assets';
 import { Menu } from './menu.js';
 import { StoreHoursTable } from './store-hours';
 import { theme, useStyles } from './util';
@@ -31,7 +32,9 @@ function App() {
         </AppBar>
 
         <main>
-          <div className={classes.heroContent}>
+          <div className={classes.heroContent} style={{
+            backgroundImage: `linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) ), url(${headerPizza})`
+          }}>
             <Container maxWidth="sm">
               <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
                 Fatte's Pizza SLO
@@ -52,7 +55,7 @@ function App() {
             </Container>
           </div>
 
-          <Container maxWidth="md">
+          <Container maxWidth="md" className={classes.cardGrid}>
             <Grid container spacing={2} alignItems="stretch" justify="center">
               <Grid item>
                 <iframe 
