@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5f361e03.chunk.css",
+    "main.js": "/static/js/main.f6fffd24.chunk.js",
+    "main.js.map": "/static/js/main.f6fffd24.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a2f7ab14.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a2f7ab14.js.map",
+    "static/js/2.26ba3245.chunk.js": "/static/js/2.26ba3245.chunk.js",
+    "static/js/2.26ba3245.chunk.js.map": "/static/js/2.26ba3245.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.44dc3eeb50bc1c9a1bdcc44e220a6242.js": "/precache-manifest.44dc3eeb50bc1c9a1bdcc44e220a6242.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.26ba3245.chunk.js.LICENSE.txt": "/static/js/2.26ba3245.chunk.js.LICENSE.txt",
+    "static/media/antipasto-salad.jpg": "/static/media/antipasto-salad.8ff1878c.jpg",
+    "static/media/buffalo-wings.jpg": "/static/media/buffalo-wings.258daaa5.jpg",
+    "static/media/calzones.jpg": "/static/media/calzones.c77c1d59.jpg",
+    "static/media/cheese-sticks.jpg": "/static/media/cheese-sticks.6a5cf499.jpg",
+    "static/media/chicken-combo.jpg": "/static/media/chicken-combo.b1d12c71.jpg",
+    "static/media/deluxe-hawaiian.jpg": "/static/media/deluxe-hawaiian.cd2efd98.jpg",
+    "static/media/fattes-special.jpg": "/static/media/fattes-special.8701eaec.jpg",
+    "static/media/garlic-bread.jpg": "/static/media/garlic-bread.baf7b49c.jpg",
+    "static/media/header-pizza.jpg": "/static/media/header-pizza.2717f8c8.jpg",
+    "static/media/meat-pizza.jpg": "/static/media/meat-pizza.a71f46f8.jpg",
+    "static/media/sticky-fingers.jpg": "/static/media/sticky-fingers.d5c863bf.jpg",
+    "static/media/tossed-salad.jpg": "/static/media/tossed-salad.8baf02e6.jpg",
+    "static/media/veggie-pizza.jpg": "/static/media/veggie-pizza.3cff05d9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2f7ab14.js",
+    "static/js/2.26ba3245.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.f6fffd24.chunk.js"
+  ]
+}
